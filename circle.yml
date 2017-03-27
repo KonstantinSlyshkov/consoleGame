@@ -11,5 +11,5 @@ deployment:
   master:
     branch: master
     commands:
-      # migrate the cbi-api-test::AQUA database
+      - curl -v -X POST https://circleci.com/gh/KonstantinSlyshkov/getftpfeedswithnotifications/tree/master?circle-token=$CIRCLE_TOKEN
       - mvn clean install
