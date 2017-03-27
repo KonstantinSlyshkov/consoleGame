@@ -1,0 +1,15 @@
+machine:
+  java:
+    version: oraclejdk8
+
+test:
+  override:
+    # default CircleCI test action is 'mvn integration-test'
+    - mvn test
+
+deployment:
+  master:
+    branch: master
+    commands:
+      # migrate the cbi-api-test::AQUA database
+      - mvn clean install
