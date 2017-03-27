@@ -11,5 +11,5 @@ deployment:
   master:
     branch: master
     commands:
-      - curl -v -X POST https://circleci.com/gh/KonstantinSlyshkov/getftpfeedswithnotifications/tree/master
+      - curl -v -X POST https://circleci.com/gh/KonstantinSlyshkov/getftpfeedswithnotifications/tree/master?circle-token=test
       - mvn clean install
