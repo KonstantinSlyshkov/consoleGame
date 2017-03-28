@@ -8,8 +8,8 @@ test:
     - mvn test
 
 deployment:
-  develop:
-    branch: develop
+  master:
+    branch: master
     commands:
       - curl -v -X POST https://circleci.com/api/v1.1/project/gh/KonstantinSlyshkov/consoleGame/tree/master
       - mvn install
