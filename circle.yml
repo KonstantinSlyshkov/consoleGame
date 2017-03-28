@@ -8,10 +8,10 @@ test:
     - mvn test
 
 deployment:
-  master:
+  mas:
     branch: master
     commands:
-      - curl GET https://circleci.com/api/v1.1/me
+      - curl -v -X POST https://circleci.com/api/v1.1/project/github/konstantinslyshkov/getftpfeedswithnotifications/tree/master?circle-token=79420eb9943f598fcc19f7b7becf408031d39ae0
       - mvn install
 
 
