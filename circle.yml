@@ -11,5 +11,7 @@ deployment:
   master:
     branch: master
     commands:
-      - curl -v -X POST https://circleci.com/gh/KonstantinSlyshkov/getftpfeedswithnotifications/tree/master?circle-token=ac745bc3fa43bac78e0d49d2ac9c1799ac7b1072
+      - curl -X POST -H -d https://circleci.com/api/v1.1/project/gh/KonstantinSlyshkov/consoleGame/tree/master
       - mvn clean install
+	  
+	  
