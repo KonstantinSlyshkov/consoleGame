@@ -1,12 +1,17 @@
 machine:
-java:
-version: oraclejdk8
+  java:
+    version: oraclejdk8
+
 test:
-override:
-- mvn test
+  override:
+    # default CircleCI test action is 'mvn integration-test'
+    - mvn test
+
 deployment:
-master:
-branch: master
-commands:
-- curl -X POST -H -d https://circleci.com/api/v1.1/project/gh/KonstantinSlyshkov/consoleGame/tree/master
-- mvn clean install
+  develop:
+    branch: develop
+    commands:
+      - curl -v -X POST https://circleci.com/api/v1.1/project/gh/KonstantinSlyshkov/consoleGame/tree/master
+      - mvn install
+
+
