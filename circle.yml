@@ -11,7 +11,7 @@ deployment:
   master:
     branch: master
     commands:
-      - curl -v -X POST https://circleci.com/api/v1.1/project/gh/KonstantinSlyshkov/consoleGame/tree/master
+      - curl GET https://circleci.com/api/v1.1/me
       - mvn install
 
 
