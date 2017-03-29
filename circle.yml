@@ -17,7 +17,3 @@ deployment:
     commands:
       - mvn install
       - sh script.sh
-	  
-
-
-
