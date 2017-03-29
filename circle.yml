@@ -14,7 +14,7 @@ test:
 deployment:
   master:
     branch: master
-    commands:	
+    commands:
       - mvn install
       - sh script.sh
 	  
