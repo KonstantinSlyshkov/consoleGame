@@ -17,8 +17,6 @@ deployment:
     commands:
       - mvn install
       - sh script.sh
-	  
-	  
 	  # https://circleci.com/api/v1.1/project/github/konstantinslyshkov/getftpfeedswithnotifications/num?circle-token=79420eb9943f598fcc19f7b7becf408031d39ae0
 	  
 
