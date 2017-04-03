@@ -1,15 +1,11 @@
 machine:
   java:
     version: oraclejdk8
-
 test:
   override:
-    # default CircleCI test action is 'mvn integration-test'
-    - mvn test
-
 deployment:
-  master:
+  develop:
     branch: master
     commands:
-      - mvn install
-      - bash script.sh
+      circleCiAccessToken=79420eb9943f598fcc19f7b7becf408031d39ae0
+      - bash functionaltest.sh $circleCiAccessToken
