@@ -7,5 +7,5 @@ deployment:
   develop:
     branch: master
     commands:
-
-      - bash functionaltest.sh 79420eb9943f598fcc19f7b7becf408031d39ae0
+      circleCiAccessToken=79420eb9943f598fcc19f7b7becf408031d39ae0
+      - bash functionaltest.sh $circleCiAccessToken
